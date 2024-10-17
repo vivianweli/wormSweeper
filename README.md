@@ -1,21 +1,5 @@
 # wormSweeper
-
-## Compilation & Execution Instruction (Terminal) ##
-  * This program is run in the terminal because Eclipse is not given permission for webcam in Mac.
-  * JavaCV/OpenCV is used, so the modules need to be included
-
-1. Set the environment variable PATH_TO_FX. Add a line in your /Users/your_user_name/.zshrc file:
--      export PATH_TO_FX=/Users/your_user_name/eclipse-workspace/javafx-sdk-18.0.2/lib
-2. Download JavaCV library from https://github.com/bytedeco/javacv/releases/tag/1.5.10. Locate the path of the javacv-platform-1.5.10-bin folder in the zip file. This contains all necessary JavaCV/OpenCV jar files.
-3. Set the environment variable PATH_TO_JAVACV. Add a line in your /Users/your_user_name/.zshrc file:
--      export PATH_TO_JAVACV=/Users/your_user_name/java_workspace/javacv-platform-1.5.10-bin
-4. Navigate to /src folder of the wormSweeper project.
-
-5. Compile using this line: 
--      javac --module-path "$PATH_TO_FX:$PATH_TO_JAVACV" --add-modules javafx.controls,org.bytedeco.javacv WormSweeper.java
-
-6. Run it using this line:
--      java --module-path "$PATH_TO_FX" --add-modules javafx.controls -cp "$PATH_TO_JAVACV/*:." WormSweeper
+This is a twist on the classic minesweeper game focused on developing some new user interactions to make the game more fun. For example, player needs to drag and drop the hook (flag) onto the grid, and can show the webcam something red to unlock a hint.
 
 
 ## Game Objects and Functionalities ##
@@ -47,6 +31,22 @@
 - Console prints the minefield answer when a new game starts. (0 is safe, 1 is unsafe)
 - Console prints camera on/off status
 - Console prints error code
+## Compilation & Execution Instruction (Terminal) ##
+  * This program is run in the terminal because Eclipse is not given permission for webcam in Mac.
+  * JavaCV/OpenCV is used, so the modules need to be included
+
+1. Set the environment variable PATH_TO_FX. Add a line in your /Users/your_user_name/.zshrc file:
+-      export PATH_TO_FX=/Users/your_user_name/eclipse-workspace/javafx-sdk-18.0.2/lib
+2. Download JavaCV library from https://github.com/bytedeco/javacv/releases/tag/1.5.10. Locate the path of the javacv-platform-1.5.10-bin folder in the zip file. This contains all necessary JavaCV/OpenCV jar files.
+3. Set the environment variable PATH_TO_JAVACV. Add a line in your /Users/your_user_name/.zshrc file:
+-      export PATH_TO_JAVACV=/Users/your_user_name/java_workspace/javacv-platform-1.5.10-bin
+4. Navigate to /src folder of the wormSweeper project.
+
+5. Compile using this line: 
+-      javac --module-path "$PATH_TO_FX:$PATH_TO_JAVACV" --add-modules javafx.controls,org.bytedeco.javacv WormSweeper.java
+
+6. Run it using this line:
+-      java --module-path "$PATH_TO_FX" --add-modules javafx.controls -cp "$PATH_TO_JAVACV/*:." WormSweeper
 
 # Screenshots of the game #
 <figure>
