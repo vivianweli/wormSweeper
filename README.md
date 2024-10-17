@@ -27,10 +27,7 @@ This is a twist on the classic minesweeper game focused on developing some new u
   - User has to select restart or quit
 - Game lost
   - User has to select restart or quit
-## Console debug ##
-- Console prints the minefield answer when a new game starts. (0 is safe, 1 is unsafe)
-- Console prints camera on/off status
-- Console prints error code
+
 ## Compilation & Execution Instruction (Terminal) ##
   * This program is run in the terminal because Eclipse is not given permission for webcam in Mac.
   * JavaCV/OpenCV is used, so the modules need to be included
@@ -47,7 +44,10 @@ This is a twist on the classic minesweeper game focused on developing some new u
 
 6. Run it using this line:
 -      java --module-path "$PATH_TO_FX" --add-modules javafx.controls -cp "$PATH_TO_JAVACV/*:." WormSweeper
-
+## Console debug ##
+- Console prints the minefield answer when a new game starts. (0 is safe, 1 is unsafe)
+- Console prints camera on/off status
+- Console prints error code
 # Screenshots of the game #
 <figure>
   <img src="https://github.com/user-attachments/assets/be104577-e5ce-4866-a7ba-45b1e389c2f0" alt="image" width="500"/>
@@ -93,6 +93,11 @@ This is a twist on the classic minesweeper game focused on developing some new u
   <figcaption>Win Screen</figcaption>
 </figure>
 
-
+## Images Attribution ##
+All images are obtained from Freepik.
+- greenapple.png - <a href="https://www.freepik.com/icon/fruit_15805008#fromView=search&page=1&position=24&uuid=646ed804-2cee-426e-a26f-5dc7f1fabcb5">Icon by Minh Do</a>
+- redapple.png - <a href="https://www.freepik.com/icon/apple_701487#fromView=search&page=1&position=41&uuid=6ab71b3d-1c79-4715-bd32-7e8823c6d822">Icon by Good Ware</a>
+- hook.png - <a href="https://www.freepik.com/icon/fishing-hook_6376133">Icon by mangsaabguru</a>
+- wormInApple.png - <a href="https://www.freepik.com/icon/worm_4831317">Icon by Freepik</a>
 
 
